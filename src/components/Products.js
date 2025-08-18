@@ -52,7 +52,7 @@ const ProductsPage = () => {
               </button>
 
      
-              <Link to="/login">
+              <Link to="/commodity-dashboard">
                 <button
                   onClick={handleLogout}
                   className="w-10 h-10 rounded-full overflow-hidden border"
