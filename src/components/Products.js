@@ -25,7 +25,7 @@ const ProductsPage = () => {
   }, []);
 
   const handleLogout = () => {
-    navigate("/login");
+    navigate("/commodity-dashboard");
   };
 
   return (

@@ -16,7 +16,7 @@ export default function App() {
       <Router>
         {/* <Navbar /> */}
         <Routes>
-          <Route path="/login" element={
+          <Route path="/commodity-dashboard" element={
              <AppLayout>
                 <Login />
               </AppLayout>

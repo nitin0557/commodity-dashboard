@@ -51,7 +51,7 @@ const AddProductPage = () => {
     alert("Product Saved (Check console)");
   };
   const handleLogout = () => {
-    navigate("/login");
+    navigate("/commodity-dashboard");
   };
 
   return (
