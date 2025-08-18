@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/commodity-dashboard/static/css/main.ef979ae1.css",
-    "main.js": "/commodity-dashboard/static/js/main.714c6994.js",
+    "main.js": "/commodity-dashboard/static/js/main.edb835ee.js",
     "index.html": "/commodity-dashboard/index.html",
     "main.ef979ae1.css.map": "/commodity-dashboard/static/css/main.ef979ae1.css.map",
-    "main.714c6994.js.map": "/commodity-dashboard/static/js/main.714c6994.js.map"
+    "main.edb835ee.js.map": "/commodity-dashboard/static/js/main.edb835ee.js.map"
   },
   "entrypoints": [
     "static/css/main.ef979ae1.css",
-    "static/js/main.714c6994.js"
+    "static/js/main.edb835ee.js"
   ]
 }
