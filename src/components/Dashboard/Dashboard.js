@@ -26,10 +26,8 @@ const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 export default function Dashboard() {
   const navigate = useNavigate()
 
-    // const { user } = useContext(AuthContext);
-  // logout function
   const handleLogout = () => {
-     navigate('/login')
+     navigate('/commodity-dashboard')
   };
 
   return (
@@ -42,7 +40,7 @@ export default function Dashboard() {
             <h2 className="text-2xl font-bold">Dashboard</h2>
 
             <div className="flex items-center space-x-4">
-              {/* Role Dropdown */}
+        
               <ThemeToggle/>
               <select className="border rounded-lg px-3 py-1">
                 <option>Admin</option>
@@ -58,10 +56,10 @@ export default function Dashboard() {
                 <span className="material-icons">notifications</span>
               </button>
 
-              <Link to="/login">
+              <Link to="/commodity-dashboard">
               <button onClick={handleLogout} className="w-10 h-10 rounded-full overflow-hidden border">
                 <img
-                  src="https://i.pravatar.cc/100" // Replace with real user profile image
+                  src="https://i.pravatar.cc/100" 
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
@@ -90,7 +88,7 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* ---------- Charts ---------- */}
+    
           <div className="grid grid-cols-2 gap-6 mb-6">
             <div className="bg-white p-6 rounded-xl shadow">
               <h3 className="text-lg font-semibold mb-4">Monthly Sales</h3>
@@ -128,7 +126,7 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* ---------- Recent Orders ---------- */}
+      
           <div className="bg-white p-6 rounded-xl shadow">
             <h3 className="text-lg font-semibold mb-4">Recent Orders</h3>
             <table className="w-full border-collapse">
