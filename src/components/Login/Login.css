@@ -1,5 +1,4 @@
 
-/* Default Light Mode */
 body.light {
   --bg: #ffffff;
   --text: #000000;
@@ -10,14 +9,13 @@ body.light {
   --button-text: #ffffff;
 }
 
-/* Dark Mode */
 body.dark {
-  --bg: #0d0d0d; /* Figma dark background */
+  --bg: #0d0d0d; 
   --text: #ffffff;
   --card: #1a1a1a;
   --input-bg: #121212;
   --input-border: #333;
-  --button-bg: #6c63ff; /* keep purple for contrast */
+  --button-bg: #6c63ff;
   --button-text: #ffffff;
 }
 
