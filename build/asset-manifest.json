@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/commodity-dashboard/static/css/main.ef979ae1.css",
+    "main.js": "/commodity-dashboard/static/js/main.5a6512b8.js",
+    "static/js/634.cc1b4922.chunk.js": "/commodity-dashboard/static/js/634.cc1b4922.chunk.js",
+    "static/js/533.38e8ddfa.chunk.js": "/commodity-dashboard/static/js/533.38e8ddfa.chunk.js",
+    "static/js/734.70a07602.chunk.js": "/commodity-dashboard/static/js/734.70a07602.chunk.js",
+    "static/js/116.d44dc589.chunk.js": "/commodity-dashboard/static/js/116.d44dc589.chunk.js",
+    "static/js/911.fed9fe3e.chunk.js": "/commodity-dashboard/static/js/911.fed9fe3e.chunk.js",
+    "index.html": "/commodity-dashboard/index.html",
+    "main.ef979ae1.css.map": "/commodity-dashboard/static/css/main.ef979ae1.css.map",
+    "main.5a6512b8.js.map": "/commodity-dashboard/static/js/main.5a6512b8.js.map",
+    "634.cc1b4922.chunk.js.map": "/commodity-dashboard/static/js/634.cc1b4922.chunk.js.map",
+    "533.38e8ddfa.chunk.js.map": "/commodity-dashboard/static/js/533.38e8ddfa.chunk.js.map",
+    "734.70a07602.chunk.js.map": "/commodity-dashboard/static/js/734.70a07602.chunk.js.map",
+    "116.d44dc589.chunk.js.map": "/commodity-dashboard/static/js/116.d44dc589.chunk.js.map",
+    "911.fed9fe3e.chunk.js.map": "/commodity-dashboard/static/js/911.fed9fe3e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef979ae1.css",
+    "static/js/main.5a6512b8.js"
+  ]
+}
