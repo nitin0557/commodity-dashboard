@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useCallback, useContext, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
 
 export default function ProductForm({ onAdd }) {
@@ -8,12 +8,12 @@ export default function ProductForm({ onAdd }) {
 
   if (user.role !== "Manager" && user.role !== "StoreKeeper") return null;
 
-  const handleSubmit = (e) => {
+  const handleSubmit = useCallback((e) => {
     e.preventDefault();
     onAdd({ name, price });
     setName("");
     setPrice("");
-  };
+  });
 
   return (
     <form onSubmit={handleSubmit}>

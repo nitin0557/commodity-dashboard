@@ -16,7 +16,6 @@ const AddProductPage = lazy(() => import("./components/AddProductPage"));
 export default function App() {
   const loadingText = "loading...";
 
-  // ✅ define a theme
   const theme = createTheme({
     palette: {
       mode: "light", // or "dark"

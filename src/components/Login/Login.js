@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import ThemeToggle from "../ThemeToggle";
@@ -10,20 +10,24 @@ export default function Login() {
   const [error, setError] = useState("");
   const [agree, setAgree] = useState(false);
   const navigate = useNavigate();
-
-  const handleSubmit = (e) => {
+const handleSubmit = useCallback(
+  (e) => {
     e.preventDefault();
     if (!agree) {
       setError("You must agree to the terms.");
       return;
     }
+
     const success = login(email, password);
+
     if (!success) {
       setError("Invalid credentials");
     } else {
       navigate("/dashboard");
     }
-  };
+  },
+  [agree, email, password, login, navigate] 
+);
 
   return (
     <div className="relative flex min-h-screen">

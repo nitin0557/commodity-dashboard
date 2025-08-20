@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import {
@@ -26,9 +26,9 @@ const icons = {
 export default function SideNav() {
   const [openMenus, setOpenMenus] = useState({});
 
-  const toggleMenu = (title) => {
+  const toggleMenu = useCallback((title) => {
     setOpenMenus((prev) => ({ ...prev, [title]: !prev[title] }));
-  };
+  },[]);
 
   return (
     <div className="h-screen w-64 bg-gray-100 p-4 flex flex-col shadow-md bg-customLight dark:bg-customDark dark:text-white">

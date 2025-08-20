@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import Footer from "./Dashboard/components/Footer";
 import SideNav from "./Dashboard/components/SideNav";
 import { Link, useNavigate } from "react-router-dom";
@@ -33,17 +33,30 @@ const AddProductPage = () => {
     fetchCategories();
   }, []);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setForm({ ...form, [name]: value });
-  };
+  // const handleChange = useCallback((e) => {
+  //   const { name, value } = e.target;
+  //   setForm({ ...form, [name]: value });
+  // },[]);
 
-  const handleImageUpload = (e, type) => {
+  const handleChange = useCallback((e) => {
+  const { name, value } = e.target;
+  setForm((prevForm) => ({
+    ...prevForm,
+    [name]: value,
+  }));
+}, []);
+
+  const handleImageUpload =useCallback((e, type) => {
     const file = e.target.files[0];
     if (file) {
-      setForm({ ...form, [type]: URL.createObjectURL(file) });
+      setForm((prev) => {
+        return {
+          ...prev, 
+         [type]: URL.createObjectURL(file) 
+       }
+      })
     }
-  };
+  },[]);
 
   const handleSubmit = (e) => {
     e.preventDefault();

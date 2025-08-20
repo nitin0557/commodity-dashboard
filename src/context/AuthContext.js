@@ -1,14 +1,14 @@
-import React, { createContext, useState, useEffect } from "react";
+import React, { createContext, useState, useCallback } from "react";
 
 export const AuthContext = createContext();
 
-export const AuthProvider = ({ children }) => {
+export const AuthProvider = React.memo(({ children }) => {
   const [user, setUser] = useState(() => {
     const saved = localStorage.getItem("user");
     return saved ? JSON.parse(saved) : null;
   });
 
-  const login = (email, password) => {
+  const login = useCallback((email, password) => {
 
     if (email === "manager@slooze.com" && password === "123456") {
       const userData = { role: "Manager", email };
@@ -22,7 +22,7 @@ export const AuthProvider = ({ children }) => {
       return true;
     }
     return false;
-  };
+  },[]);
 
   const logout = () => {
     setUser(null);
@@ -34,4 +34,4 @@ export const AuthProvider = ({ children }) => {
       {children}
     </AuthContext.Provider>
   );
-};
+});
